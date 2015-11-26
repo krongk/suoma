@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  agency_id: 
+  name: MyString
+  mobile: MyString
+  is_admin: false
+
+two:
+  agency_id: 
+  name: MyString
+  mobile: MyString
+  is_admin: false

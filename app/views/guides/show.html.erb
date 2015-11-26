@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @guide.name %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @guide.mobile %>
+</p>
+
+<p>
+  <strong>License number:</strong>
+  <%= @guide.license_number %>
+</p>
+
+<p>
+  <strong>Qq:</strong>
+  <%= @guide.qq %>
+</p>
+
+<p>
+  <strong>Wechat:</strong>
+  <%= @guide.wechat %>
+</p>
+
+<p>
+  <strong>Is published:</strong>
+  <%= @guide.is_published %>
+</p>
+
+<%= link_to 'Edit', edit_guide_path(@guide) %> |
+<%= link_to 'Back', guides_path %>

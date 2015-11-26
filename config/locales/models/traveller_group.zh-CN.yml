@@ -1,0 +1,17 @@
+---
+zh-CN:
+  activerecord:
+    models:
+      traveller_group: 游客小组
+    attributes:
+      traveller_group:
+        trip: 旅游线路
+        agency_contact: 组团社联系人
+        trav_date: 出游日期
+        price_receivable: 应收
+        price_received: 已收
+        price_for_sb: 代收
+    errors:
+      traveller_group: 
+  helpers:
+    traveller_group: 

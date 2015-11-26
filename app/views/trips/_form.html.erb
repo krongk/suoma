@@ -1,0 +1,26 @@
+<!-- Form starts -->
+<div class="awidget">
+   <div class="awidget-head">
+      <h3>旅游线路</h3>
+   </div>
+   <div class="awidget-body">
+       
+<%= simple_form_for(@trip) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <% unless @trip.new_record? %>
+      <%= f.input :description %>
+      <%= f.input :is_published %>
+    <% end %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: 'btn btn-primary btn-lg' %>
+  </div>
+<% end %>
+
+   </div>
+</div>
+<!-- Form ends -->    

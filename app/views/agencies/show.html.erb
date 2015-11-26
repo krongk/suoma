@@ -1,0 +1,31 @@
+<%= render partial: 'layouts/breadcrumb', locals: {title: @agency.name, urls: [['修改', edit_agency_path(@agency)], ['返回', agencies_path]]} %>
+
+<h2>
+  <%= @agency.name %>
+  <small><%= @agency.address %></small>
+</h2>
+
+<h3>联系人</h3>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>姓名</th>
+      <th>电话</th>
+      <th>联系人</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @agency.agency_contacts.each do |agency_contact| %>
+      <tr>
+        <td><%= agency_contact.name %></td>
+        <td><%= agency_contact.mobile %></td>
+        <td><%= agency_contact.is_admin ? '是' : '' %></td>
+        <td><%= link_to '修改', edit_agency_agency_contact_path(@agency, agency_contact) %> | 
+          <%= link_to '删除', agency_agency_contact_url(@agency, agency_contact), method: :delete, data: { confirm: '确定删除?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -2,20 +2,29 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "My Application" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "My Application" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "环景国旅OA" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "环景国旅OA" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
       <%= render 'layouts/navigation' unless current_page?(root_path) %>
     </header>
-      <%= render 'layouts/messages' %>
-      <%= yield %>
+    <% unless current_page?(root_path) %>
+      <div style="margin-top: 40px;">&nbsp;</div>
+    <% end %>
+    <%= render 'layouts/messages' %>
+
+    <% if current_page?(root_path) %>
+      <%= yield %>  
+    <% else %>
+      <div class="container">
+        <%= yield %>
+      </div>
+    <% end %>
   </body>
 </html>

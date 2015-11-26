@@ -1,0 +1,50 @@
+<!-- Form starts -->
+<div class="awidget">
+   <div class="awidget-head">
+      <h3>游客小组</h3>
+   </div>
+   <div class="awidget-body">
+       
+<%= simple_form_for(@traveller_group, html: {class: 'form-inline'}) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-inputs mb-10">
+        <%= f.association :trip %>
+      </div>
+      <div class="form-inputs mb-10">
+        <%= f.association :agency_contact %>
+      </div>
+      <div class="form-inputs mb-10">
+        <%= f.input :trav_date %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-inputs mb-10">
+        <%= f.input :price_receivable %>
+      </div>
+      <div class="form-inputs mb-10">
+        <%= f.input :price_received %>
+      </div>
+      <div class="form-inputs mb-10">
+        <%= f.input :price_for_sb %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-inputs mb-10">
+        <div class="form-group decimal optional traveller_group_price_need_recieve">
+          <label class="decimal optional control-label" for="price_need_recieve">未收</label>
+          <input class="numeric decimal optional form-control" type="number" step="any" value="" name="price_need_recieve" id="price_need_recieve">
+        </div>
+      </div>
+      <div class="form-actions">
+        <%= f.button :submit, class: 'btn btn-primary btn-lg' %>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+   </div>
+</div>
+<!-- Form ends -->    

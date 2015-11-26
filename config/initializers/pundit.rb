@@ -13,7 +13,7 @@ module PunditHelper
   private
 
   def user_not_authorized
-    flash[:alert] = "Access denied."
+    flash[:alert] = "访问被拒绝."
     redirect_to (request.referrer || root_path)
   end
 

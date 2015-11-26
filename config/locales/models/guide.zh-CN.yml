@@ -1,0 +1,17 @@
+---
+zh-CN:
+  activerecord:
+    models:
+      guide: 导游
+    attributes:
+      guide:
+        name: 姓名
+        mobile: 电话
+        license_number: 导游证书
+        qq: QQ
+        wechat: 微信
+        is_published: 是否发布
+    errors:
+      guide: 
+  helpers:
+    guide: 

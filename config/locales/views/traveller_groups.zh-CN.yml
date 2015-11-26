@@ -1,0 +1,20 @@
+---
+zh-CN:
+  traveller_groups:
+    index:
+      title: Traveller groups
+    show:
+      title: Traveller group
+    edit:
+      title: Editing Traveller group
+    new:
+      title: New Traveller group
+  flash:
+    traveller_groups:
+      create:
+        notice: '%{resource_name} was successfully created.'
+      update:
+        notice: '%{resource_name} was successfully updated.'
+      destroy:
+        notice: '%{resource_name} was successfully deleted.'
+        alert: '%{resource_name} could not be deleted.'

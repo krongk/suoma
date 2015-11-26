@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Trip:</strong>
+  <%= @traveller_group.trip %>
+</p>
+
+<p>
+  <strong>Agency contact:</strong>
+  <%= @traveller_group.agency_contact %>
+</p>
+
+<p>
+  <strong>Trav date:</strong>
+  <%= @traveller_group.trav_date %>
+</p>
+
+<p>
+  <strong>Price receivable:</strong>
+  <%= @traveller_group.price_receivable %>
+</p>
+
+<p>
+  <strong>Price received:</strong>
+  <%= @traveller_group.price_received %>
+</p>
+
+<p>
+  <strong>Price for sb:</strong>
+  <%= @traveller_group.price_for_sb %>
+</p>
+
+<%= link_to 'Edit', edit_traveller_group_path(@traveller_group) %> |
+<%= link_to 'Back', traveller_groups_path %>
+

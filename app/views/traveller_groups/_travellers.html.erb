@@ -1,0 +1,26 @@
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>编号</th>
+      <th>姓名</th>
+      <th>电话</th>
+      <th>证件号码</th>
+      <th>是否小孩</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @traveller_group.travellers.each do |traveller| %>
+      <tr>
+        <td><%= traveller.id %></td>
+        <td><%= traveller.name %></td>
+        <td><%= traveller.mobile %></td>
+        <td><%= traveller.id_card %></td>
+        <td><%= traveller.is_kid %></td>
+        <td><%= link_to '修改', edit_traveller_group_traveller_path(@traveller_group, traveller) %></td>
+        <td><%= link_to '删除', traveller_group_traveller_path(@traveller_group, traveller), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

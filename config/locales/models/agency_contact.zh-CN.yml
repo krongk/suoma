@@ -1,0 +1,15 @@
+---
+zh-CN:
+  activerecord:
+    models:
+      agency_contact: 组团社联系人
+    attributes:
+      agency_contact:
+        agency: 组团社
+        name: 姓名
+        mobile: 电话
+        is_admin: 联系人
+    errors:
+      agency_contact: 
+  helpers:
+    agency_contact: 

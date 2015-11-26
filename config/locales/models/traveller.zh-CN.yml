@@ -1,0 +1,16 @@
+---
+zh-CN:
+  activerecord:
+    models:
+      traveller: 游客
+    attributes:
+      traveller:
+        traveller_group: 游客小组
+        name: 姓名
+        mobile: 电话
+        id_card: 证件号码
+        is_kid: 小孩
+    errors:
+      traveller: 
+  helpers:
+    traveller: 

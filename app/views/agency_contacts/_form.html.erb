@@ -1,0 +1,26 @@
+<!-- Form starts -->
+<div class="awidget">
+   <div class="awidget-head">
+      <h3>组团社联系人</h3>
+   </div>
+   <div class="awidget-body">
+       
+<%= simple_form_for([@agency, @agency_contact]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%#= f.association :agency, selected: params[:agency_id] %>
+    <%= f.input :agency_id, as: :hidden, input_html: { value: @agency.id} %>
+    <%= f.input :name %>
+    <%= f.input :mobile %>
+    <%= f.input :is_admin, input_html: { checked: @agency.agency_contacts.any? ? false : true} %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: 'btn btn-primary btn-lg' %>
+  </div>
+<% end %>
+
+   </div>
+</div>
+<!-- Form ends -->    

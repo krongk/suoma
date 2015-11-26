@@ -1,0 +1,24 @@
+<!-- Form starts -->
+<div class="awidget">
+   <div class="awidget-head">
+      <h3>收款凭据</h3>
+   </div>
+   <div class="awidget-body">
+       
+<%= simple_form_for(@voucher) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :traveller_group %>
+    <%= f.input :price %>
+    <%= f.input :image %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: 'btn btn-primary btn-lg' %>
+  </div>
+<% end %>
+
+   </div>
+</div>
+<!-- Form ends -->    

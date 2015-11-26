@@ -1,0 +1,20 @@
+---
+zh-CN:
+  agency_contacts:
+    index:
+      title: Agency contacts
+    show:
+      title: Agency contact
+    edit:
+      title: Editing Agency contact
+    new:
+      title: New Agency contact
+  flash:
+    agency_contacts:
+      create:
+        notice: '%{resource_name} was successfully created.'
+      update:
+        notice: '%{resource_name} was successfully updated.'
+      destroy:
+        notice: '%{resource_name} was successfully deleted.'
+        alert: '%{resource_name} could not be deleted.'

@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-12">
+     <ol class="breadcrumb">
+      <li><%= title %></li>
+      <% urls.each do |url| %>
+        <li><%= link_to url[0], url[1] %></li>
+      <% end %>
+    </ol>
+  </div>
+</div>

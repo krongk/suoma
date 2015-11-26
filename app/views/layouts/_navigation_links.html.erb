@@ -1,2 +1,22 @@
 <%# add navigation links to this file %>
-<li><%= link_to 'About', page_path('about') %></li>
+<% if user_signed_in? %>
+  <li><%= link_to '关于', page_path('about') %></li>
+
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">初始化信息 <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><%= link_to '旅游线路', trips_path %></li>
+      <li><%= link_to '组团社', agencies_path %></li>
+      <li><%= link_to '导游', guides_path %></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">游客管理 <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><%= link_to '游客查询', traveller_groups_path %></li>
+      <li><%= link_to '新增游客', new_traveller_group_path %></li>
+    </ul>
+  </li>
+
+<% end %>

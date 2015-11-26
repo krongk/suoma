@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trip_id: 
+  agency_contact_id: 
+  trav_date: 2015-11-24
+  price_receivable: 9.99
+  price_received: 9.99
+  price_for_sb: 9.99
+
+two:
+  trip_id: 
+  agency_contact_id: 
+  trav_date: 2015-11-24
+  price_receivable: 9.99
+  price_received: 9.99
+  price_for_sb: 9.99

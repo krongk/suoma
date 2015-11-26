@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Traveller group:</strong>
+  <%= @traveller.traveller_group %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @traveller.name %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @traveller.mobile %>
+</p>
+
+<p>
+  <strong>Id card:</strong>
+  <%= @traveller.id_card %>
+</p>
+
+<p>
+  <strong>Is kid:</strong>
+  <%= @traveller.is_kid %>
+</p>
+
+<%= link_to 'Edit', edit_traveller_path(@traveller) %> |
+<%= link_to 'Back', travellers_path %>

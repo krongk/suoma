@@ -1,0 +1,14 @@
+---
+zh-CN:
+  activerecord:
+    models:
+      agency: 组团社
+    attributes:
+      agency:
+        name: 名称
+        en_name: 英文名称
+        address: 详细地址
+    errors:
+      agency: 
+  helpers:
+    agency: 

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Agency:</strong>
+  <%= @agency_contact.agency %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @agency_contact.name %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @agency_contact.mobile %>
+</p>
+
+<p>
+  <strong>Is admin:</strong>
+  <%= @agency_contact.is_admin %>
+</p>
+
+<%= link_to 'Edit', edit_agency_contact_path(@agency_contact) %> |
+<%= link_to 'Back', agency_contacts_path %>

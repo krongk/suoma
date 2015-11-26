@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  traveller_group_id: 
+  name: MyString
+  mobile: MyString
+  id_card: MyString
+  is_kid: false
+
+two:
+  traveller_group_id: 
+  name: MyString
+  mobile: MyString
+  id_card: MyString
+  is_kid: false

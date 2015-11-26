@@ -1,0 +1,14 @@
+---
+zh-CN:
+  activerecord:
+    models:
+      voucher: 转账凭据
+    attributes:
+      voucher:
+        traveller_group: 游客小组
+        price: 价格
+        image: 凭据截图
+    errors:
+      voucher: 
+  helpers:
+    voucher: 
